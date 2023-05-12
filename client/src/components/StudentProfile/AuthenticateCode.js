@@ -199,54 +199,54 @@ const AuthenticateCode = () => {
             >
               <use xlinkHref="#exclamation-triangle-fill" />
             </svg>
-            <div>Failed to mark Attendance</div>
+            <div>Failed to Mark Attendance</div>
           </div>
         )}
       </div>
-      <div
-        className="mainClass"
-        style={{ marginLeft: "350px", marginTop: "3rem",width:'60%' }}
-      >
-        <h2 style={{ fontWeight: "bolder",textAlign:'center' }}>Authenticate Code</h2>
-        <div className="subClass">
-          <div style={{ marginRight: "2rem", width: "50%" }}>
-            <input
-              id="subject"
-              name="subject"
-              placeholder="Enter subject"
-              autoComplete="off"
-              type="text"
-              value={classCode.subject}
-              onChange={handleInput}
-              className="codeInput"
-            />
-            <input
-              id="code"
-              name="code"
-              className="codeInput"
-              placeholder="Enter Code"
-              autoComplete="off"
-              type="text"
-              value={classCode.code}
-              onChange={handleInput}
-            />
-          </div>
-          <div>
-            <p style={{ fontWeight: "bold" }}>
-              DEAR STUDENT, PLEASE ENTER THE AUTHENTICATION CODE TO MARK
-              ATTENDANCE !
-            </p>
-          </div>
-        </div>
-        <div style={{ marginTop: "1rem" }}>
-          <input
-            style={{ padding: "3px", border: "none",textAlign:'center' }}
-            type="submit"
-            onClick={compareImage}
-            value="Submit"
-          />
-        </div>
-      </div>
+      <div className="mainClass" style={{ marginLeft: "auto", marginRight: "auto", marginTop: "3rem", width: "60%" }}>
+  <h2 style={{ fontWeight: "bold", textAlign: "center", fontSize: "3rem", fontFamily: "Bebas Neue, sans-serif" }}>
+    Authenticate Code
+  </h2>
+  <div className="subClass">
+    <div style={{ marginRight: "2rem", width: "50%" }}>
+      <input
+        id="subject"
+        name="subject"
+        placeholder="Enter subject"
+        autoComplete="off"
+        type="text"
+        value={classCode.subject}
+        onChange={handleInput}
+        className="codeInput"
+      />
+      <input
+        id="code"
+        name="code"
+        className="codeInput"
+        placeholder="Enter Code"
+        autoComplete="off"
+        type="text"
+        value={classCode.code}
+        onChange={handleInput}
+      />
+    </div>
+    <div>
+      <p style={{ fontWeight: "bold", fontSize: "1.6rem", fontFamily: "Bebas Neue, sans-serif" }}>
+        Dear Student, Please enter the authentication code to mark Attendance!
+      </p>
+    </div>
+  </div>
+  <div style={{ marginTop: "1rem", display: "flex", justifyContent: "center" }}>
+    <input
+      style={{ padding: "10px 20px", border: "none", cursor: "pointer" }}
+      type="submit"
+      onClick={compareImage}
+      value="Submit"
+    />
+  </div>
+</div>
+
+
     </>
   );
 };

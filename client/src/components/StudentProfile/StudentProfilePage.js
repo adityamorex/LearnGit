@@ -191,9 +191,9 @@ const StudentProfilePage = () => {
                 <option value="Electronics and Communication">
                   Electronics and Communication
                 </option>
-                <option value="Mechanical">Mechanical</option>
-                <option value="Civil">Civil</option>
-                <option value="Electrical">Electrical</option>
+                <option value="Axis Bank">Axis Bank</option>
+                <option value="Biotechnology">Biotechnology</option>
+                <option value="M. Tech">M. Tech</option>
               </select>
               <select
                 name="semester"
@@ -206,6 +206,11 @@ const StudentProfilePage = () => {
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                
               </select>
             </div>
           </div>

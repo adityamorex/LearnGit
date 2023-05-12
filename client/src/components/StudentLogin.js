@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
+
 const StudentLogin = () => {
   const navigate = useNavigate();
 
@@ -38,8 +39,10 @@ const StudentLogin = () => {
     }
   };
 
+
   return (
     <>
+
       <svg xmlns="http://www.w3.org/2000/svg" style={{ display: "none" }}>
         <symbol
           id="exclamation-triangle-fill"
@@ -103,13 +106,14 @@ const StudentLogin = () => {
                 login
               </button>
               <p className="message">
-                Not registered?{" "}
+                New Student?{" "}
                 <NavLink to="/register/student">Create an account</NavLink>
               </p>
             </form>
           </div>
         </div>
       </div>
+
     </>
   );
 };

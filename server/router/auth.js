@@ -369,7 +369,7 @@ router.post("/validateCode", async (req, res) => {
     res.status(400).send({ message: "Enter correct code to mark attendance" });
   } else if (data.code !== codeEntered) {
     res.status(400).send({ message: "Enter correct code to mark attendance" });
-  } else if (time - data.time > 2) {
+  } else if (time - data.time > 4) {
     res.status(400).send({ message: "Time Expired to mark attendance" });
   } else {
     res.status(201).send({ message: "Code validated" });
@@ -395,7 +395,7 @@ router.post("/updateFaculty", async (req, res) => {
   const updated_data = await previous_data.save();
 
   if (updated_data) {
-    res.status(201).send({ message: "data updated" });
+    res.status(201).send({ message: "Data Updated" });
   } else {
     res.status(400).send({ message: "Failed to update data" });
   }
@@ -423,7 +423,7 @@ router.post("/updateStudent", async (req, res) => {
   const updated_data = await previous_data.save();
 
   if (updated_data) {
-    res.status(201).send({ message: "data updated" });
+    res.status(201).send({ message: "Data Updated" });
   } else {
     res.status(400).send({ message: "Failed to update data" });
   }

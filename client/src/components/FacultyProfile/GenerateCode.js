@@ -182,47 +182,50 @@ const GenerateCode = () => {
             <div>Failed to send email</div>
           </div>
         ))}
-      <div className="code-container">
-        <h2 style={{ fontWeight: "bolder" }}>Generate Code</h2>
-        <div className="divbox">
-          <div className="inputbox">
-            <input
-              className="inputdiv"
-              autoComplete="off"
-              type="text"
-              id="subject"
-              onChange={handleInput}
-              value={classData.subject}
-              name="subject"
-              placeholder="Enter subject"
-            />
-            <input
-              className="inputdiv"
-              autoComplete="off"
-              type="text"
-              id="code"
-              onChange={handleInput}
-              value={classData.code}
-              name="code"
-              placeholder="Enter Code"
-            />
-          </div>
-          <div className="textbox">
-            DEAR FACULTY, PLEASE GENERATE YOUR CLASS AUTHENTICATION CODE FOR
-            ATTENDANCE
-          </div>
-        </div>
-        <div className="btnbox">
-          <button className="btn btn-success input-btn" onClick={generateCode}>
-            Generate
-          </button>
-          {generatecode && (
-            <button className="btn btn-success" onClick={sendEmail}>
-              Send Email
-            </button>
-          )}
-        </div>
-      </div>
+<div className="code-container" style={{ marginLeft: "auto", marginRight: "auto", marginTop: "3rem", width: "60%" , height: "60%",padding: "20px"}}>
+  <h2 style={{ fontWeight: "bold", textAlign: "center", fontSize: "3rem", fontFamily: "Bebas Neue, sans-serif" }}>
+    Generate Code
+  </h2>
+  <div className="divbox">
+    <div className="inputbox">
+      <input
+        className="inputdiv"
+        autoComplete="off"
+        type="text"
+        id="subject"
+        onChange={handleInput}
+        value={classData.subject}
+        name="subject"
+        placeholder="Enter subject"
+      />
+      <input
+        className="inputdiv"
+        autoComplete="off"
+        type="text"
+        id="code"
+        onChange={handleInput}
+        value={classData.code}
+        name="code"
+        placeholder="Enter Code"
+      />
+    </div>
+    <div className="textbox" style={{ fontWeight: "bold", fontSize: "1.6rem", color: "#fff" }}>
+      Dear Faculty, Please generate class authentication code for Attendance.
+    </div>
+  </div>
+  <div className="btnbox" style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
+    <button className="btn btn-success input-btn" style={{ padding: "10px 20px", border: "none", cursor: "pointer", marginRight: "1rem" }} onClick={generateCode}>
+      Generate
+    </button>
+    {generatecode && (
+      <button className="btn btn-success" style={{ padding: "10px 20px", border: "none", cursor: "pointer" }} onClick={sendEmail}>
+        Send Email
+      </button>
+    )}
+  </div>
+</div>
+
+
     </>
   );
 };

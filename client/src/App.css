@@ -3,17 +3,20 @@
 body {
   margin: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 /* navbar CSS */
 
 .navbar {
-  background-color: black;
+  background-color: rgb(15, 15, 15);
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   position: fixed !important;
   top: 0;
@@ -61,6 +64,7 @@ html {
   height: 100%;
   border-bottom: 3px solid transparent;
 }
+
 .fa-code {
   margin-left: 1rem;
 }
@@ -88,7 +92,7 @@ html {
 
 .nav-item:hover:after {
   width: 100%;
-  background: #ffdd40;
+  background: #06e311;
 }
 
 .nav-item .active {
@@ -125,10 +129,12 @@ html {
     transition: all 0.5s ease;
     z-index: 1;
   }
+
   .nav-item .active {
     color: #ffdd40;
     border: none;
   }
+
   .nav-links {
     padding: 1.5rem;
     width: 100%;
@@ -159,7 +165,7 @@ html {
 }
 
 .leftCol {
-  background-image: url("../public/about.gif");
+  background-image: url("../public/nulogo.png");
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -171,6 +177,16 @@ html {
   min-height: 100vh;
   padding-top: 2.5rem;
 }
+
+.about-container {
+  position: relative;
+  background-image: url('./components/images/white-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+
 .subDiv {
   display: flex;
   width: 80%;
@@ -179,6 +195,8 @@ html {
   margin-left: 10%;
 }
 
+
+
 /* login page */
 
 .login-page {
@@ -186,8 +204,15 @@ html {
   height: 100vh;
   padding: 8% 0 0;
   margin: auto;
-  background: linear-gradient(to top right, #7a79ea 0%, #095659 100%);
+  /* background: linear-gradient(to top right, #7a79ea 0%, #095659 100%); */
+  /* backgroundImage:
+    'url("https://www.tutorialspoint.com/reactjs/images/reactjs-minilogo.jpg")';
+  backgroundSize: "contain";
+  backgroundRepeat: "no-repeat"; */
+  background-image: url("./components/images/background.jpeg");
+  background-size: contain;
 }
+
 .form {
   position: relative;
   z-index: 1;
@@ -198,6 +223,7 @@ html {
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
@@ -209,6 +235,7 @@ html {
   box-sizing: border-box;
   font-size: 14px;
 }
+
 .form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -223,36 +250,43 @@ html {
   transition: all 0.3 ease;
   cursor: pointer;
 }
+
 .form button:hover,
 .form button:active,
 .form button:focus {
   background: rgb(35 58 159);
 }
+
 .form .message {
   margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 15px;
 }
+
 .form .message a {
   color: rgb(35 58 159);
   text-decoration: none;
 }
+
 .container {
   position: relative;
   z-index: 1;
   max-width: 300px;
   margin: 0 auto;
 }
+
 .container:before,
 .container:after {
   content: "";
   display: block;
   clear: both;
 }
+
 .container .info {
   margin: 50px auto;
   text-align: center;
 }
+
 .container .info h1 {
   margin: 0 0 15px;
   padding: 0;
@@ -260,22 +294,32 @@ html {
   font-weight: 300;
   color: #1a1a1a;
 }
+
 .container .info span {
   color: #4d4d4d;
   font-size: 12px;
 }
+
 .container .info span a {
   color: #000000;
   text-decoration: none;
 }
+
 .container .info span .fa {
   color: #ef3b3a;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./components/images/background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -297,14 +341,17 @@ body {
   background-color: rgb(0, 0, 0, 0.4);
   padding-top: 60px;
 }
+
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s;
 }
+
 @-webkit-keyframes animatezoom {
   from {
     -webkit-transform: scale(0);
   }
+
   to {
     -webkit-transform: scale(1);
   }
@@ -314,6 +361,7 @@ body {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
@@ -330,16 +378,20 @@ body {
 }
 
 .code-container {
-  margin-left: 350px;
-  margin-right: 3rem;
-  height: 17rem;
-  width: 60%;
-  margin-top: 4rem;
-  padding: 26px;
-  background: linear-gradient(to top right, #7a79ea 0%, #095659 100%);
+  margin: 3rem auto;
+  background: radial-gradient(#0905f5, #095659);
+  padding: 25px;
+  border-radius: 8px;
+  width: 70%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
+
 
 .divbox {
   margin-top: 2rem;
@@ -360,6 +412,7 @@ body {
   border: none;
   margin-bottom: 1rem;
 }
+
 .btnbox {
   display: flex;
   flex-direction: row;
@@ -370,28 +423,36 @@ body {
 .textbox {
   font-weight: bold;
 }
+
 .profile-container {
   margin-left: 350px;
   margin-top: 3rem;
   margin-right: 3rem;
 }
+
 .edit-form {
   margin-top: 3rem;
-  background: linear-gradient(to top right, #7a79ea 0%, #095659 100%);
+  background: radial-gradient(#0905f5, #095659);
   padding: 25px;
   width: 70%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 .editbox {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
 }
+
 .left {
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: space-around;
 }
+
 .editinput {
   margin-bottom: 1rem;
   border: none;
@@ -399,6 +460,7 @@ body {
   width: 85%;
   font-size: small;
 }
+
 .right {
   display: flex;
   flex-direction: column;
@@ -409,83 +471,106 @@ body {
 /* registration form  */
 
 .mainClass {
-  margin-left: 350px;
-  margin-top: 3rem;
-  background: linear-gradient(to top right, #7a79ea 0%, #095659 100%);;
+  margin: 3rem auto;
+  background: radial-gradient(#0905f5, #095659);
   padding: 25px;
-  margin-right: 5rem;
+  border-radius: 8px;
+  width: 70%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 .subClass {
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
 }
+
 .codeInput {
   width: 100%;
   padding: 3px;
   border: none;
   margin-bottom: 0.8rem;
 }
+
 .form-container {
   margin-left: 340px;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  
 }
+
 .imgBox {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
+
 .welcomeDiv {
   margin-left: 4rem;
-  background: linear-gradient(to top right, #7a79ea 0%, #095659 100%);
+  background: radial-gradient(#0905f5, #095659);
   padding: 25px;
-  border-radius: 3rem;
+  border-radius: 8px;
   height: 280px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
+
+
 .main-Class {
   padding-top: 100px;
   padding-bottom: 70px;
-  background: linear-gradient(to top right, #7a79ea 0%, #095659 100%);
+  background: radial-gradient(#0905f5, #095659);
   min-height: 100vh;
 }
+
 .wrapperClass {
   max-width: 680px;
   margin: 0 auto;
 }
+
 .registerCard {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 8px 20px 0 rgb(0 0 0 / 15%);
 }
+
 .cardBody {
   padding: 57px 65px;
   padding-bottom: 65px;
 }
+
 .title {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 40px;
   color: rgb(54, 51, 51);
 }
+
 .row-grp {
   -webkit-box-pack: justify;
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
+
 .col1 {
   width: calc((100% - 30px) / 2);
 }
+
 .inputGrp {
   position: relative;
   margin-bottom: 22px;
 }
+
 .Label {
   font-size: 16px;
   color: #555;
@@ -493,6 +578,7 @@ body {
   display: block;
   margin-bottom: 5px;
 }
+
 .inputBx {
   line-height: 50px;
   background: #fafafa;
@@ -508,6 +594,7 @@ body {
   font-family: inherit;
   transition: all 0.4s ease;
 }
+
 .select {
   padding: 13px;
   border: none;
@@ -518,6 +605,7 @@ body {
   width: 100%;
   cursor: pointer;
 }
+
 .webcam-btn {
   padding: 5px;
   border: none;
@@ -525,6 +613,7 @@ body {
   margin-right: 1rem;
   font-weight: 700;
 }
+
 .video {
   margin-top: 3rem;
   margin-left: 14rem;

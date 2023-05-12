@@ -21,7 +21,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="nav-container">
           <HashLink smooth to="/#" className="nav-logo">
-            FACE RECOGNITION ATTENDANCE SYSTEM
+            NIIT University Facial Attendance System
           </HashLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">

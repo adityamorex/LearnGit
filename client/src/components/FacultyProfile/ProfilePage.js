@@ -89,7 +89,7 @@ const ProfilePage = () => {
   return (
     <>
       <div style={{ marginLeft: "350px" }} className="profile-container">
-        <h2 style={{marginLeft:'20%'}}>Welcome , {user.firstname}</h2>
+      <h2 style={{ marginLeft: '20%', fontSize: '3rem' }}>Welcome, {user.firstname}</h2>
         <div className="edit-form">
           <h2 style={{ fontWeight: "bolder",marginLeft:'36%' }}>Edit Profile</h2>
           <div className="editbox">
